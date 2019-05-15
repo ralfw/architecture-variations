@@ -1,0 +1,2 @@
+portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+{"Name":"Apple Inc.","Symbol":"AAPL","Currenncy":"USD","Qty":5,"Price":197.18,"Id":"dec7298e-a9e4-43bb-96b6-78b8051d0c96","Timestamp":"2019-05-12T09:46:29.267196+02:00"}

@@ -1,0 +1,2 @@
+portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+{"Symbol":"SNE","Price":49.7,"Id":"0c95126a-b5a4-4bc0-b38f-10433d2719bf","Timestamp":"2019-05-12T10:15:12.567781+02:00"}

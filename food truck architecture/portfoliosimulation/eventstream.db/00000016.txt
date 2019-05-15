@@ -1,0 +1,2 @@
+portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+{"Symbol":"AAPL","Price":188.66,"Id":"a6f69673-4b21-4e62-b607-a7fb6014722c","Timestamp":"2019-05-15T09:51:07.972712+02:00"}

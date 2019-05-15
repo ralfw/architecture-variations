@@ -1,0 +1,2 @@
+portfoliosimulation.backend.events.StockSold, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+{"Symbol":"JGHAF","Id":"9dce010f-a0d0-42e3-9ea2-be8e50ebcc5a","Timestamp":"2019-05-12T09:48:07.095696+02:00"}

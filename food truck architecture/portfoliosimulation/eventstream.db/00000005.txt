@@ -1,0 +1,2 @@
+portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+{"Name":"Jungheinrich Aktiengesellschaft","Symbol":"JGHAF","Currenncy":"USD","Qty":7,"Price":31.5,"Id":"ff9b3613-c45c-4263-b087-fb719dfb8e26","Timestamp":"2019-05-12T09:47:29.676744+02:00"}
