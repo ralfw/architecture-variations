@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Linq.Expressions;
-using System.Xml.Serialization;
-using portfoliosimulation.contract;
 using portfoliosimulation.contract.messages.commands;
 using portfoliosimulation.contract.messages.queries.candidatestocks;
 using portfoliosimulation.contract.messages.queries.portfolio;
@@ -28,7 +25,7 @@ namespace portfoliosimulation.frontend
         
         private void MenuLoop() {
             while (true) {
-                Console.Write($">>> D(isplay, B(uy, S(ell, U(pdate, eX(it?: ");
+                Console.Write(">>> D(isplay, B(uy, S(ell, U(pdate, eX(it?: ");
                 switch (Console.ReadLine().ToUpper()) {
                     case "X": return;
                     
@@ -37,6 +34,7 @@ namespace portfoliosimulation.frontend
                         break;
                     
                     case "U":
+                        Console.WriteLine("Ûpdating...");
                         OnUpdatePortfolioCommand(new UpdatePortfolioCommand());
                         break;
                     
@@ -58,6 +56,7 @@ namespace portfoliosimulation.frontend
                 var input = Console.ReadLine();
                 if (input == "") return;
 
+                Console.WriteLine("Loading candidates...");
                 onId(input);
             }
         }

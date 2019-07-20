@@ -1,2 +1,7 @@
-portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-{"Symbol":"JGHAF","Price":31.5,"Id":"0693dc6e-764d-417f-a60f-16bea63780e2","Timestamp":"2019-05-12T09:47:29.676762+02:00"}
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "JUN3.HAM",
+  "Price": 23.84,
+  "Id": "0b9054b8-da6f-4c4e-ac79-a322ea9cfd75",
+  "Timestamp": "2019-07-20T19:25:42.7835258+02:00"
+}

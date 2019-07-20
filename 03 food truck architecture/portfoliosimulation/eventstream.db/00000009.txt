@@ -1,2 +1,7 @@
-portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-{"Symbol":"AAPL","Price":197.18,"Id":"810aa334-7a8d-487e-8c57-2b3802f27983","Timestamp":"2019-05-12T10:11:04.314695+02:00"}
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "AAPL",
+  "Price": 202.59,
+  "Id": "1846afcb-f8a2-4096-b7c1-ec37ce5b7a6d",
+  "Timestamp": "2019-07-20T19:27:38.9440126+02:00"
+}
