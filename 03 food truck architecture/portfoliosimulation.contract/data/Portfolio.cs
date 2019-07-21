@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace portfoliosimulation.backend.messagepipelines.queries.candidatestocksquery
+namespace portfoliosimulation.contract.data
 {
-    class Portfolio
+    public class Portfolio
     {
         public class Stock
         {

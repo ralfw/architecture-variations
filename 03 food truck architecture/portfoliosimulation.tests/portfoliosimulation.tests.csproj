@@ -7,28 +7,39 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="portfoliotoupdate.csv" />
+      <None Remove="smallportfolio.csv" />
+      <None Remove="testportfolio.csv" />
+      <None Remove="testportfolio_no_header.csv" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="portfoliotoupdate.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="smallportfolio.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="testportfolio.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="testportfolio_no_header.csv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
         <PackageReference Include="xunit" Version="2.4.0" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\eventstore\eventstore.csproj" />
+      <ProjectReference Include="..\messagehandling\messagehandling.csproj" />
       <ProjectReference Include="..\portfoliosimulation.backend\portfoliosimulation.backend.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="testportfolio.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="testportfolio_no_header.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="smallportfolio.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="portfoliotoupdate.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <ProjectReference Include="..\portfoliosimulation.contract\portfoliosimulation.contract.csproj" />
+      <ProjectReference Include="..\portfoliosimulation\portfoliosimulation.csproj" />
     </ItemGroup>
 
 </Project>

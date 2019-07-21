@@ -1,11 +1,10 @@
-using System;
-using System.Diagnostics;
 using System.IO;
 using portfoliosimulation.backend;
 using portfoliosimulation.backend.adapters;
-using portfoliosimulation.contract;
-using portfoliosimulation.contract.messages.commands.updateportfolio;
+using portfoliosimulation.contract.messages.commands;
+using portfoliosimulation.contract.messages.queries.candidatestocks;
 using portfoliosimulation.contract.messages.queries.portfolio;
+using portfoliosimulation.contract.messages;
 using Xunit;
 using Xunit.Abstractions;
 

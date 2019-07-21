@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using portfoliosimulation.contract.data;
 
 namespace portfoliosimulation.backend.domain
 {
@@ -19,17 +20,16 @@ namespace portfoliosimulation.backend.domain
     
     class PortfolioManager
     {
-        public static PortfolioReturns CalculateReturns((string symbol, int qty, 
-                                                         decimal buyingPrice, decimal currentPrice)[] portfolio)
+        public static PortfolioReturns CalculateReturns(Portfolio portfolio)
         {
-            var returns = portfolio.Aggregate(new Dictionary<string, PortfolioReturns.EntryReturn>(),
+            var returns = portfolio.Entries.Aggregate(new Dictionary<string, PortfolioReturns.EntryReturn>(),
                 (rs, e) => {
-                    var buyingValue = e.qty * e.buyingPrice;
+                    var buyingValue = e.Qty * e.BuyingPrice;
                     var r = new PortfolioReturns.EntryReturn {
-                        Return = e.qty * e.currentPrice - buyingValue
+                        Return = e.Qty * e.CurrentPrice - buyingValue
                     };
                     r.RateOfReturn = r.Return / buyingValue;
-                    rs[e.symbol] = r;
+                    rs[e.Symbol] = r;
                     return rs;
                 });
 
@@ -37,7 +37,7 @@ namespace portfoliosimulation.backend.domain
                 Returns = returns,
                 TotalReturn = returns.Values.Sum(v => v.Return)
             };
-            var totalBuyingValue = portfolio.Sum(e => e.qty * e.buyingPrice);
+            var totalBuyingValue = portfolio.Entries.Sum(e => e.Qty * e.BuyingPrice);
 
             pr.TotalRateOfReturn = totalBuyingValue > 0.0m ? pr.TotalReturn / totalBuyingValue : 0.0m;
             
