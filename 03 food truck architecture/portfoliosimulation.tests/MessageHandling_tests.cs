@@ -4,7 +4,6 @@ using portfoliosimulation.backend.adapters;
 using portfoliosimulation.contract.messages.commands;
 using portfoliosimulation.contract.messages.queries.candidatestocks;
 using portfoliosimulation.contract.messages.queries.portfolio;
-using portfoliosimulation.contract.messages;
 using Xunit;
 using Xunit.Abstractions;
 
