@@ -1,2 +1,6 @@
-portfoliosimulation.backend.events.StockSold, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-{"Symbol":"JGHAF","Id":"9dce010f-a0d0-42e3-9ea2-be8e50ebcc5a","Timestamp":"2019-05-12T09:48:07.095696+02:00"}
+{
+  "$type": "portfoliosimulation.backend.events.StockSold, portfoliosimulation.backend",
+  "Symbol": "JUN3.HAM",
+  "Id": "16a4b5e2-cb1d-4585-90a8-f9e9d71725ac",
+  "Timestamp": "2019-07-20T19:26:24.9427613+02:00"
+}

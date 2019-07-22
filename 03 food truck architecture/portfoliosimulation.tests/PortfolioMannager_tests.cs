@@ -1,6 +1,6 @@
-using portfoliosimulation.backend;
 using portfoliosimulation.backend.domain;
-using portfoliosimulation.contract.data.domain;
+using portfoliosimulation.backend.messagepipelines.queries.candidatestocksquery;
+using portfoliosimulation.contract.data;
 using Xunit;
 
 namespace portfoliosimulation.tests

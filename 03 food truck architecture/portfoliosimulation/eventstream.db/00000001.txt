@@ -1,2 +1,10 @@
-portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-{"Name":"Sony Corporation","Symbol":"SNE","Currenncy":"USD","Qty":10,"Price":49.7,"Id":"92db56da-a049-419c-8076-36938d29a0d2","Timestamp":"2019-05-12T09:45:59.109223+02:00"}
+{
+  "$type": "portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend",
+  "Name": "Sony Corporation",
+  "Symbol": "SNE",
+  "Currenncy": "USD",
+  "Qty": 10,
+  "Price": 53.66,
+  "Id": "a459a046-77b6-4c28-8319-ba1241c399b8",
+  "Timestamp": "2019-07-20T19:24:09.263198+02:00"
+}

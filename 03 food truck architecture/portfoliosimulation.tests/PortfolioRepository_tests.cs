@@ -1,8 +1,8 @@
 using System;
 using System.IO;
-using portfoliosimulation.backend;
 using portfoliosimulation.backend.adapters;
-using portfoliosimulation.contract.data.domain;
+using portfoliosimulation.backend.messagepipelines.queries.candidatestocksquery;
+using portfoliosimulation.contract.data;
 using Xunit;
 
 namespace portfoliosimulation.tests
@@ -53,7 +53,7 @@ namespace portfoliosimulation.tests
             });
             sut.Store(p);
 
-            var lines = File.ReadAllLines("x.csv");
+            var lines = File.ReadAllLines("store.csv");
             Assert.Equal(4, lines.Length);
             Assert.StartsWith("Apple", lines[0]);
             Assert.StartsWith("Test", lines[3]);

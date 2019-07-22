@@ -1,0 +1,10 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend",
+  "Name": "Facebook Inc.",
+  "Symbol": "FBOK34.SAO",
+  "Currenncy": "BRL",
+  "Qty": 15,
+  "Price": 387.94,
+  "Id": "8f5ca4be-ccd1-4c5e-b265-1d47ff6bee02",
+  "Timestamp": "2019-07-20T19:29:50.7273843+02:00"
+}
