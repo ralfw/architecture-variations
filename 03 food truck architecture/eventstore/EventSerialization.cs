@@ -9,6 +9,7 @@ namespace eventstore
             Formatting = Formatting.Indented,
             TypeNameHandling = TypeNameHandling.All
         };
+        
         public static string Serialize(Event e) {
             return JsonConvert.SerializeObject(e, Settings);
         }

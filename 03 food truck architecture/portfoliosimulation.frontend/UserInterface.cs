@@ -34,7 +34,7 @@ namespace portfoliosimulation.frontend
                         break;
                     
                     case "U":
-                        Console.WriteLine("Ûpdating...");
+                        Console.WriteLine("Updating...");
                         OnUpdatePortfolioCommand(new UpdatePortfolioCommand());
                         break;
                     
